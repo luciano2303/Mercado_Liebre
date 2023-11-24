@@ -11,6 +11,9 @@ app.get('/', function(req, res) {
 app.get('/register', function(req, res) {
     res.sendFile(path.resolve(__dirname, './views/register.html'));
 });
+app.post("/register", function(req, res) {
+    res.send("Gracias, la información será procesada");
+});
 app.get('/login', function(req, res) {
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
