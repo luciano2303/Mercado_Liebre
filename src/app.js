@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.listen(3080, () => console.log('Servidor corriendo en http://localhost:3080'));
+const port = process.env.PORT || 3080;
+
+app.listen(port, () => console.log('Servidor corriendo en http://localhost:${port}'));
 app.get('/', function(req, res) {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
