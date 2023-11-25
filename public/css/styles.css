@@ -132,6 +132,10 @@ h3 {
     right: 20px;
     top: -15px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+.fa-truck:hover {
+    transform: rotate(360deg);
 }
 .caja-camion {
     display: flex;
