@@ -3,13 +3,15 @@
     margin: 0px;
     padding: 0px;
 }
+
+/* -- HEADER --*/
+
 header {
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
-    
-
+    margin-bottom: -4px;
 }
 ul li {
     list-style-type: none;
@@ -22,27 +24,32 @@ ul li {
     flex-wrap: wrap;
     padding: 4px;
     margin: 4px;
-
 }
 .logo, .barra {
     width: 38%;
-    
+    margin: 0 auto;
+}
+.input-barra-busqueda {
+    border:0;
+    outline: none;
+    border-radius: 3px;
+    width: 80%;
+    height: 25px;
+}
+.lupa-button {
+    border:0;
+    outline: none;
+    border-radius: 3px;
+    width: 15%;
+    height: 25px;
+    background-color: #ebebeb;
+    margin: 3px;
 }
 .cuotas-sin-tarjeta {
     text-align: center;
     font-size: 12px;
+    margin: 0 auto;
 }
-
-.fa-magnifying-glass {
-    background-color: #ebebeb;
-    border: solid 1px black;
-}
-
-
-.ofertas h3 {
-    font-size: 24px;
-}
-
 .burger-menu i {
     background-color: #1259c3;
     color: white;
@@ -53,7 +60,6 @@ ul li {
     margin-left: 50%;
     margin-bottom: 15px;
 }
-
 
 /* -- MAIN --*/
 
@@ -67,7 +73,6 @@ h3 {
     padding: 10px;
     margin-bottom: 10px;;
 }
-
 
 .formulario-register {
     margin: 0 auto;
@@ -112,33 +117,58 @@ h3 {
     
 }
 
-
 /* -- FOOTER -- */
 
-footer .articulo-footer {
+footer{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.articulo-footer {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    padding: 10px;
 }
 .articulo-footer h4 {
     font-weight: bold;
     color: #666;
+    margin-bottom: 5px;
 }
 .fa-credit-card {
     font-size: 2em;
-    color: #1259c3;
+    color: #04142e;
     margin-bottom: 10px;
+    transition-property: color;
+    transition-duration: 450ms;
+}
+.fa-credit-card:hover {
+    color: #1259c3;
 }
 .fa-gift {
     font-size: 2em;
-    color: #1259c3;
+    color: #04142e;
     margin-bottom: 10px;
+    transition-property: color;
+    transition-duration: 450ms;
+}
+.fa-gift:hover {
+    color: #1259c3;
 }
 .fa-user-shield {
     font-size: 2em;
-    color: #1259c3;
+    color: #04142e;
     margin-bottom: 10px;
+    transition-property: color;
+    transition-duration: 450ms;
 }
-
+.fa-user-shield:hover {
+    color: #1259c3;
+}
+.copyright{
+    font-size: 9px;
+}
 
 /* .nav-bar1 {
     display: flex;
@@ -154,7 +184,7 @@ footer .articulo-footer {
 
 /* ------- MOVIL -------- */
 
-@media(max-width: 375px) {
+@media(max-width: 425px) {
     h4.descripcion {
         display: none;
     }
@@ -165,14 +195,7 @@ footer .articulo-footer {
 
 /* ------- TABLET -------- */
 
-@media(min-width: 376px) {
-    body {
-        font-size: 16px;
-    }
-    .articulos-main {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 45%;
-    }
+@media(min-width: 426px) {
     .wrap-dinamico li {
         width: 45%;
     }
@@ -181,7 +204,7 @@ footer .articulo-footer {
     }
     .logo, .barra, .cuotas-sin-tarjeta {
         width: 25%;
-        font-size: 12px;
+        font-size: 9px;
     }
     .navbar-header {
         display: flex;
@@ -189,6 +212,7 @@ footer .articulo-footer {
         justify-content: space-between;
         margin: 10px;
         padding: 10px;
+        font-size: 9px;
     }
     .navbar1 {
         display: flex;
@@ -204,6 +228,20 @@ footer .articulo-footer {
     .navbar2 li {
         margin-right: 16px;
     }
+    .input-barra-busqueda {
+        transition-property: box-shadow;
+        transition-duration: 450ms;
+    }
+    .lupa-button {
+        transition-property: box-shadow;
+        transition-duration: 450ms;
+    }
+    .input-barra-busqueda:hover {
+        box-shadow: -2px 2px 5px 1px rgb(100, 100, 100);
+    }
+    .lupa-button:hover {
+        box-shadow: -2px 2px 5px 1px rgb(100, 100, 100);
+    }
     .formulario-login {
         width: 75%;
     }
@@ -213,15 +251,29 @@ footer .articulo-footer {
 /* ------- COMPUTADORA -------- */
 
 @media(min-width: 769px) {
-    body {
-        font-size: 16px;
+    .navbar-header{
+        font-size: 12px;
     }
-
+    .cuotas-sin-tarjeta {
+        font-size: 12px;
+    }
     .wrap-dinamico li {
         width: 22%;
     }
     .articulos-main {
         width: 23%;
+    }
+    .contenedor-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .input-barra-busqueda {
+        height: 35px;
+    }
+    .lupa-button {
+        height: 35px;
     }
     .formulario-login {
         width: 50%;

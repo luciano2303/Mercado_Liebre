@@ -24,7 +24,7 @@
              <!--Barra de busqueda-->
              <div class="barra">
                 <form action="/busqueda" method="post">
-                    <input type="text" name="busqueda" id="busqueda" placeholder="Buscar productos, marcas"> <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="input-barra-busqueda" type="text" name="busqueda" id="busqueda" placeholder="Buscar productos, marcas"><button class="lupa-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>     
              </div>
              <h4 class="cuotas-sin-tarjeta"><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de crédito</h4>
@@ -52,7 +52,6 @@
         </div>
 
     </header>
-
     <main>
         <section class="formulario-login">
             <form action="/registro" method="post">
@@ -68,24 +67,26 @@
     </main>
 
     <footer>
-        <section class="articulo-footer">
-            <i class="fa-solid fa-credit-card"></i>
-            <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-        <section class="articulo-footer">
-            <i class="fa-solid fa-gift"></i>
-            <h4>Envío gratis desde los $ 2.500</h4>
-            <p>Solo por estar registrado en MercadoLiebre tenes envíos gratis en miles de productos. Es un beneficio de mercado puntos.</p>
-        </section>
-        <section class="articulo-footer">
-            <i class="fa-solid fa-user-shield"></i>
-            <h4>Seguridad de principio a fin</h4>
-            <p>No te gusta? Devolvelo!En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@.</p>
-        </section>
-            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        <div class="contenedor-footer">
+            <section class="articulo-footer">
+                <i class="fa-solid fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section class="articulo-footer">
+                <i class="fa-solid fa-gift"></i>
+                <h4>Envío gratis desde los $ 2.500</h4>
+                <p>Solo por estar registrado en MercadoLiebre tenes envíos gratis en miles de productos. Es un beneficio de mercado puntos.</p>
+            </section>
+            <section class="articulo-footer">
+                <i class="fa-solid fa-user-shield"></i>
+                <h4>Seguridad de principio a fin</h4>
+                <p>No te gusta? Devolvelo!En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@.</p>
+            </section>
+        </div>
+
+        <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
       
     </footer>
-
 </body>
 </html>
